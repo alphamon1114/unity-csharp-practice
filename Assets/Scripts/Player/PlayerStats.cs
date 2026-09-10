@@ -45,10 +45,10 @@ namespace HorrorEscape
                 // TODO [2.3 형변환] currentHp / maxHp 는 int / int 라서 결과가 0 아니면 1입니다.
                 //   float으로 형변환해서 0.0~1.0이 나오게 고치세요.
                 // 힌트: (float)currentHp / maxHp
-                return 1f;
+                return (float)currentHp / maxHp;
             }
         }
-
+       
         /// <summary>현재 이동 속도. 공포가 높으면 손이 떨려 조금 느려집니다.</summary>
         public float GetMoveSpeed(bool sprinting)
         {
